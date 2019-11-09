@@ -45,8 +45,8 @@ done
 
 if [ $runsql -eq 1 ] ; then
 	# check where sqlite is
-	if [ -f /data/data/com.termux/files/usr/lib/sqlite3 ] ; then
-		sqlpath=/data/data/com.termux/files/usr/lib
+	if [ -f /data/data/com.termux/files/usr/bin/sqlite3 ] ; then
+		sqlpath=/data/data/com.termux/files/usr/bin
 		echo "SQLite3 binary found in: $sqlpath" >> $logfile
 		echo "" >> $logfile
 	elif [ -f /system/bin/sqlite3 ] ; 	then
