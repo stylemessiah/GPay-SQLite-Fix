@@ -146,8 +146,8 @@ on_install() {
 
 	# check where sqlite3 is
 	ui_print "Checking for sqlite3 binary...."
-	if [ -f /data/data/com.termux/files/usr/lib/sqlite3 ] ; then
-		sqlpath=/data/data/com.termux/files/usr/lib
+	if [ -f /data/data/com.termux/files/usr/bin/sqlite3 ] ; then
+		sqlpath=/data/data/com.termux/files/usr/bin
 		ui_print "SQLite3 binary found in: $sqlpath"
 	elif [ -f /system/bin/sqlite3 ] ; 	then
 		sqlpath=/system/bin
