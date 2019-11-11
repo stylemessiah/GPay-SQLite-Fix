@@ -148,13 +148,15 @@ on_install() {
 	ui_print "Checking for sqlite3 binary...."
 	if [ -f /data/data/com.termux/files/usr/bin/sqlite3 ] ; then
 		sqlpath=/data/data/com.termux/files/usr/bin
-		ui_print "SQLite3 binary found in: $sqlpath"
+		ui_print "[termux] SQLite3 binary found in: $sqlpath"
+	elif [ -f /data/data/com.keramidas.TitaniumBackup/files/sqlite3 ] ; 	then	
+		ui_print "[titanium] SQLite3 binary found in: $sqlpath"	
 	elif [ -f /system/bin/sqlite3 ] ; 	then
 		sqlpath=/system/bin
-		ui_print "SQLite3 binary found in: $sqlpath"
+		ui_print "[standard] SQLite3 binary found in: $sqlpath"
 	elif [ -f /system/xbin/sqlite3 ] ; then
 		sqlpath=/system/xbin
-		ui_print "SQLite3 binary found in: $sqlpath"
+		ui_print "[standard] SQLite3 binary found in: $sqlpath"
 	else 
 		ui_print "SQLite3 binary not found, please install an SQLite3 binary, without this the fix may not work"
 		ui_print "Please read the original post (see support link) or /cache/playfixfirstrun.log after reboot for further info"
@@ -183,7 +185,7 @@ on_install() {
 		if [ $? -eq 0 ] ;	then
 			ui_print "$i: hidden successfully"
 		else
-			ui_print "$i: already hidden/not hidden successfully (most likely already hidden)"	
+			ui_print "$i: already hidden"	
 		fi
 	done
 	ui_print " "
@@ -227,5 +229,4 @@ set_permissions() {
 }
 
 # You can add more functions to assist your custom script code
-
 
