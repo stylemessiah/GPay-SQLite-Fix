@@ -47,15 +47,19 @@ if [ $runsql -eq 1 ] ; then
 	# check where sqlite is
 	if [ -f /data/data/com.termux/files/usr/bin/sqlite3 ] ; then
 		sqlpath=/data/data/com.termux/files/usr/bin
-		echo "SQLite3 binary found in: $sqlpath" >> $logfile
+		echo "[termux] SQLite3 binary found in: $sqlpath" >> $logfile
 		echo "" >> $logfile
+	elif [ -f /data/data/com.keramidas.TitaniumBackup/files/sqlite3 ] ; 	then
+		sqlpath=/data/data/com.keramidas.TitaniumBackup/files
+		echo "[titanium] SQLite3 binary found in: $sqlpath" >> $logfile
+		echo "" >> $logfile	
 	elif [ -f /system/bin/sqlite3 ] ; 	then
 		sqlpath=/system/bin
-		echo "SQLite3 binary found in: $sqlpath" >> $logfile
+		echo "[standard] SQLite3 binary found in: $sqlpath" >> $logfile
 		echo "" >> $logfile
 	elif [ -f /system/xbin/sqlite3 ] ; then
 		sqlpath=/system/xbin
-		echo "SQLite3 binary found in: $sqlpath" >> $logfile
+		echo "[standard] SQLite3 binary found in: $sqlpath" >> $logfile
 		echo "" >> $logfile
 	else 
 		echo "SQLite3 binary not found, please install a SQLite3 binary, without this the fix *may* not work" >> $logfile
