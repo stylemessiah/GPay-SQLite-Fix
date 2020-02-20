@@ -8,7 +8,7 @@ do
 done
 
 echo "System boot completed" > $logfile
-echo "" >> $logfile
+echo "" > $logfile
 
 while (true); do
 if [ -f "/system/bin/chmod" ]; then
@@ -55,7 +55,7 @@ else
 	echo "" >> $logfile
 fi
 sleep 2
-/system/bin/chmod 777 $logfile
+
 
 # Don't modify anything after this
 if [ -f $INFO ]; then
