@@ -17,7 +17,7 @@ do
 done
 
 echo "System boot completed" > $logfile
-echo "" >> $logfile
+echo "" > $logfile
 
 while (true); do
 if [ -f "/system/bin/chmod" ]; then
