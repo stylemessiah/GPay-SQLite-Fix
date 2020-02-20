@@ -1,0 +1,6 @@
+id=73sydney.gpay
+name=GPay SQLite Fix
+version=v2.0
+versionCode=1
+author=73sydney
+description=Applies the full SQLite fix for Google Pay

@@ -5,4 +5,3 @@ https://forum.xda-developers.com/apps/magisk/magisk-google-pay-gms-17-1-22-pie-t
 in a simple format and using service.d to run the SQLite script AND/OR set database permissions
 
 This version uses a permissions changes AND SQLite script 
-
