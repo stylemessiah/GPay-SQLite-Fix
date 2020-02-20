@@ -68,7 +68,7 @@ ui_print "WARNING: This *may* clear data used for Loyalty Cards & Passes"
 ui_print " "
 ui_print "  Vol+ = Yes, clear, i understand the RISKS"
 ui_print " "
-ui_print "  Vol- = No, DONT clear, i understand it may fail"
+ui_print "  Vol- = No, DONT clear, i understand it *may* prevent the module from working"
 ui_print " "
 if $VKSEL; then
 	ui_print "Clear for Google Pay: Yes"
