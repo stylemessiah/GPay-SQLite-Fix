@@ -4,6 +4,9 @@ https://forum.xda-developers.com/apps/magisk/magisk-google-pay-gms-17-1-22-pie-t
 
 in a simple format and using service.d to run the SQLite script and set database permissions
 
-Project Stats:   ![GitHub release (latest by date)](https://img.shields.io/github/v/release/stylemessiah/GPay-SQLite-Fix?style=plastic) ![GitHub All Releases](https://img.shields.io/github/downloads/stylemessiah/GPay-SQLite-Fix/total?style=plastic)
+Project Stats:   
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/stylemessiah/GPay-SQLite-Fix?style=plastic) 
+![GitHub Release Date](https://img.shields.io/github/release-date/stylemessiah/GPay-SQLite-Fix?style=plastic)
+![GitHub All Releases](https://img.shields.io/github/downloads/stylemessiah/GPay-SQLite-Fix/total?style=plastic)
 
 
