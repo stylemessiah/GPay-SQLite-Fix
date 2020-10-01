@@ -58,7 +58,7 @@ elif [ -f /system/xbin/sqlite3 ] ; then
 	echo "" >> $logfile
 else 
 	echo "SQLite3 binary not found, please install a SQLite3 binary, without this the fix *may* not work" >> $logfile
-	echo "I provide an SQLite3 Universal Binary Magisk Module, and links to SQLite3 bonaries for other architectures" >> $logfile
+	echo "I provide an SQLite3 Universal Binary Magisk Module, and links to SQLite3 binaries for other architectures" >> $logfile
 	echo "at https://forum.xda-developers.com/showpost.php?p=79643248&postcount=176" >> $logfile
 	echo "" >> $logfile
 fi
