@@ -7,6 +7,9 @@
 # if Magisk change its mount point in the future
 MODDIR=${0%/*}
 
+# set script to run SQL commands
+runsql=1
+
 # set logfile variable
 logfile="/cache/payfixfirstrun.log"
 
@@ -17,7 +20,7 @@ do
 done
 
 echo "System boot completed" > $logfile
-echo "" > $logfile
+echo "" >> $logfile
 
 while (true); do
 if [ -f "/system/bin/chmod" ]; then
